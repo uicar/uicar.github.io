@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Uicar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Comparte coche en trayectos cotidianos y mueveté por tu cuidad" />
+        <meta name="keywords" content="Compartir coche,trayectos cotidianos, ir al trabajo, compartir coche" />
+        <meta content="Uicar.io" name="author" />
+        <!-- favicon -->
+    <link rel="icon" href="https://uicar.io/images/favicon.png" type="image/x-icon"> 
+	<link rel="shortcut icon" href="https://uicar.io/images/favicon.png" type="image/x-icon"> 
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Magnific -->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Main css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <!-- Loader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Loader -->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <div>
+                    <a class="logo" href="index.html">Uicar<span class="text-primary">.io</span></a>
+                </div>                 
+                <div onclick="go()" class="buy-button">
+                    <a onclick="go()" target="_blank" class="btn btn-primary">Descargar</a>
+                </div><!--end login button-->
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="has-submenu">
+                            <a href="https://instagram.com/uicar.io">Blog</a>
+            
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">App</a><span class="menu-arrow"></span>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li><a href="https://apps.apple.com/es/app/uicar/id1457600525?l=en">Ios</a></li>
+                                        <li><a href="https://play.google.com/store/apps/details?id=io.uicar.app&hl=en_US">Android</a></li>
+                                     </ul>
+                                </li>
+                            </ul>
+                        </li>
+        
+                       
+                        <li class="has-submenu">
+                            <a href="javascript:void(0)">Github</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="https://github.com/uicar/app">App <span class="badge badge-primary ml-2">New</span></a></li>
+                                <li><a href="https://github.com/uicar/web">Web</a></li>
+                                <li><a href="https://github.com/uicar">Doc</a></li>
+                            </ul>
+                        </li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        <!-- Navbar End -->
+        
+        <!-- Hero Start -->
+        <section class="bg-half-170 border-bottom" id="home">
+            <div class="home-center">
+                <div class="home-desc-center">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-7">
+                                <div class="title-heading mt-4">
+                                    <!-- <div class="alert alert-light rounded-pill d-inline-block" role="alert"> <span class="badge rounded badge-secondary mr-2">1.0.0</span> Version </div>
+                                     -->
+                                     <a href="https://www.producthunt.com/posts/uicar?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-uicar" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=174000&theme=dark" alt="Uicar - Move around your city, share car in daily rides! | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a> 
+                                    <h1 class="heading mt-3 mb-3">Donde quieras con Uicar: <span class="element text-primary" data-elements="trabajo, gym, uni, viaje, fiesta"></span> </h1>
+                                    <p class="para-desc text-muted">Ayuda al medioambiente con Uicar♻️,encuentra gente que haga los mismos trayectos cotidianos como tu, muevete por tu cuidad, conoce a gente</p>
+                                     <div class="mt-4 pt-2">
+                                        <a href="https://apps.apple.com/us/app/uicar/id1457600525?l=es&ls=1" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-apple"></i> App Store</a>
+                                        <a href="https://play.google.com/store/apps/details?id=io.uicar.app&hl=en_US" class="btn btn-outline-primary mt-2"><i class="mdi mdi-google-play"></i> Play Store</a>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+
+                            <div class="col-lg-6 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                                <div class="position-relative">
+                                    <img src="https://uicar.io/images/Artboard-en.png" class="rounded img-fluid mx-auto d-block" alt="">
+                                    <div class="play-icon">
+                                        <a href="https://www.youtube.com/watch?v=X___RW_nFDw" class="play-btn video-play-icon">
+                                            <i class="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end container--> 
+                </div><!--end home desc center-->
+            </div><!--end home center-->
+        </section><!--end section-->
+        <!-- Hero End -->
+        
+        <!-- Feature Start -->
+        <section class="section pt-0 bg">
+            <div class="container">
+                    <br>
+                    <br>
+                    <br>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-60">
+                            <h4 class="main-title mb-4">La Aplicación</h4>
+                            <p class="text-muted para-desc mb-0 mx-auto">Empieza a moverte <span class="text-primary font-weight-bold">por tu</span> cuidad.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6">
+                        <img src="images/iphone3.png" class="img-fluid mx-auto d-block" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="section-title ml-lg-5">
+                            <h4 class="title mb-4">Empieza a usar la aplicación ya!</h4>
+                            <p class="text-muted">Usa la app para conectarte con gente de tu zona y compartir coche</p>
+                            <ul class="list-unstyled feature-list text-muted">
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Encuentra trayectos similares a los tuyos</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Conoce gente cerca tuya</li>
+                                <li><i class="mdi mdi-checkbox-marked-circle text-success h4 mr-2"></i>Chatea con gente y llega al acuerdo tu mismo para compartir coche</li>
+                            </ul>
+                           
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+                <br>
+                <br>
+                <br>
+                <br>
+            </div><!--end container-->
+        <!-- End feature -->
+
+        <!-- CTA Start -->
+        <section class="bg-cta" data-jarallax='{"speed": 0.5}' style="background: url('images/bg_3.jpg');" id="cta">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title">
+                            <h4 class="main-title text-white mb-4">Para de gastar tiempo en atascos y empieza a utilizar Uicar.</h4>
+                            <p class="text-light para-desc mx-auto">Menos coches menos trafico asi de simple.</p>
+                            <a href="https://www.youtube.com/watch?v=X___RW_nFDw" class="play-btn mt-2 video-play-icon">
+                                <i class="mdi mdi-play text-white"></i>
+                            </a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- CTA End -->
+
+        <!-- Price Start -->
+        
+            <!-- Price End -->
+
+            <!-- Counter End -->
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-title">
+                            <h4 class="title mb-4">So far <span class="text-primary">uicar</span> </h4>
+                            <p class="text-muted para-desc">Uicar started in 2019 and so far we create more that 500 active users in the beta, and now we are going to expand much more to become a tech gigant.</p>
+                            <div class="mt-4 pt-2">
+                                    <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2"><i class="mdi mdi-apple"></i> App Store</a>
+                                    <a href="javascript:void(0)" class="btn btn-outline-primary mt-2"><i class="mdi mdi-google-play"></i> Play Store</a>
+                                </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-6">
+                        <div class="row ml-lg-5" id="counter">
+                            <div class="col-md-6 col-12">
+                                <div class="row">
+                                    <div class="col-12 mt-4 pt-2">
+                                        <div class="counter-box position-relative counter-border bg-light shadow rounded p-4 pt-5 pb-5 text-center">
+                                            <h2 class="mb-0"><span class="counter-value" data-count="2">0</span></h2>
+                                            <h5 class="counter-head">Paises</h5>
+                                        </div><!--end counter box-->
+                                    </div>
+
+                                    <div class="col-12 mt-4 pt-2">
+                                        <div class="counter-box position-relative counter-border bg-primary shadow rounded p-4 pt-5 pb-5 text-center">
+                                            <h2 class="text-light mb-0"><span class="counter-value" data-count="15">1</span>k</h2>
+                                            <h5 class="counter-head text-light">Kilometros hechos por usuarios</h5>
+                                        </div><!--end counter box-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-12">
+                                <div class="row pt-lg-5 mt-lg-4">
+                                    <div class="col-12 mt-4 pt-2">
+                                        <div class="counter-box position-relative counter-border bg-primary shadow rounded p-4 pt-5 pb-5 text-center">
+                                            <h2 class="text-light mb-0"><span class="counter-value" data-count="5">0</span></h2>
+                                            <h5 class="counter-head text-light">Equipo</h5>
+                                        </div><!--end counter box-->
+                                    </div>
+
+                                    <div class="col-12 mt-4 pt-2">
+                                        <div class="counter-box position-relative counter-border bg-light shadow rounded p-4 pt-5 pb-5 text-center">
+                                            <h2 class="mb-0"><span class="counter-value" data-count="8">3</span>k</h2>
+                                            <h5 class="counter-head">Trayectos</h5>
+                                        </div><!--end counter box-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Counter End -->
+
+        <!-- News Start -->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-4e81590d-1315-4a0d-a4c1-06f80b375dad"></div>
+        <br>
+        <br>
+        <br>
+        
+        <!-- News End -->
+
+        <!-- Footer Start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                        <a class="logo-footer" href="#">Uicar<span class="text-primary">.io</span></a>
+                        <p class="mt-4">Muevete por tu cuidad y comparte coche en trayectos cotidianos.</p>
+                        <ul class="list-unstyled social-icon social mb-0 mt-4">
+                            <li class="list-inline-item"><a href="https://instagram.com/uicar.io" class="rounded"><i class="mdi mdi-instagram" title="Instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/uicar_" class="rounded"><i class="mdi mdi-twitter" title="Twitter"></i></a></li>
+
+                            
+
+                        </ul><!--end icon-->
+					<a href="mailto:info@uicar.io" >info@uicar.io</a>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h4 class="text-light footer-head">Nosotros</h4>
+                        <ul class="list-unstyled footer-list mt-4">
+                            <li><a href="https://github.com/uicar/" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i>Github</a></li>
+                            <li><a href="https://instagram.com/uicar.io" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Blog</a></li>
+                            <li><a href="https://github.com/uicar/" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Team</a></li>
+        
+                        </ul>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <h4 class="text-light footer-head">Links</h4>
+                        <ul class="list-unstyled footer-list mt-4">
+                                <li><a href="https://uicar.io/insta" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Instagram partner</a></li>
+                            <li><a href="/terms.pdf" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Terms of Services</a></li>
+                            <li><a href="/terms.pdf" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Privacy Policy</a></li>
+                        </ul>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        
+                   
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <hr>
+        <footer class="footer footer-bar">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-left">
+                            <p class="mb-0">© 2020 Uicar.io Design with <i class="mdi mdi-heart text-danger"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Back to top -->
+        <a href="#" class="back-to-top rounded text-center" id="back-to-top"> 
+            <i class="mdi mdi-chevron-up d-block"> </i> 
+        </a>
+        <!-- Back to top -->
+
+        <script>
+            function go() {
+                $(document).ready(function() {
+                    if (navigator.userAgent.toLowerCase().indexOf("android") > -1) {
+                        window.location.href = 'https://play.google.com/store/apps/details?id=io.uicar.app';
+                    }
+                    if (navigator.userAgent.toLowerCase().indexOf("iphone") > -1) {
+                        window.location.href = 'https://apps.apple.com/us/app/uicar/id1457600525?l=es&ls=1';
+                    } else {
+                        window.location.href = 'https://apps.apple.com/us/app/uicar/id1457600525?l=es&ls=1';
+                    }
+                });
+            }
+        </script>
+
+        <!-- javascript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!-- Magnific Popup -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific.init.js"></script> 
+        <!-- Typed -->
+        <script src="js/typed.js"></script>
+        <script src="js/typed.init.js"></script>
+        <!-- Counter -->
+        <script src="js/counter.init.js"></script>
+        <!-- Parallax -->
+        <script src="js/parallax.js "></script>
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
