@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
     <html lang="en">
 
@@ -19,74 +20,7 @@
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Main css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
-	<style>
-		.loader {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-.car {
-	&__body {
-		animation: shake 0.2s ease-in-out infinite alternate;
-	}
-	
-	&__line {
-		transform-origin: center right;
-		stroke-dasharray: 22;
-		animation: line 0.8s ease-in-out infinite;
-		animation-fill-mode: both;
-		
-		&--top {
-			animation-delay: 0s;
-		}
-		
-		&--middle {
-			animation-delay: 0.2s;
-		}
-		
-		&--bottom {
-			animation-delay: 0.4s;
-		}
-	}
-}
-
-@keyframes shake {
-	0% {
-		transform: translateY(-1%);
-	}
-	100% {
-		transform: translateY(3%);
-	}
-}
-
-@keyframes line {
-	0% {
-		stroke-dashoffset: 22;
-	}
-	
-	25% {
-		stroke-dashoffset: 22;
-	}
-	
-	50% {
-		stroke-dashoffset: 0;
-	}
-	
-	51% {
-		stroke-dashoffset: 0;
-	}
-	
-	80% {
-		stroke-dashoffset: -22;
-	}
-	
-	100% {
-		stroke-dashoffset: -22;
-	}
-}
-	    </style>
     </head>
 
     <body>
@@ -199,7 +133,7 @@
 
                             <div class="col-lg-6 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
                                 <div class="position-relative">
-                                    <img src="https://uicar.io/images/Artboard-en.png" class="rounded img-fluid mx-auto d-block" alt="">
+                                    <img src="images/Artboard-en.png" class="rounded img-fluid mx-auto d-block" alt="">
                                     <div class="play-icon">
                                         <a href="https://www.youtube.com/watch?v=X___RW_nFDw" class="play-btn video-play-icon">
                                             <i class="mdi mdi-play text-primary rounded-pill bg-white shadow"></i>
